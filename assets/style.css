@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 115%;
+    line-height: 1.4em;
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-variation-settings: 'wght' 400;
+}
+body {
+
+}
+:root {
+    --base-padding: .75rem;
+    --color-pastel-purple: #C3A1FF;
+    --color-darker-purple: #7D5FB3;
+    --color-darkest-purple: #634A8C;
+    --color-wheat: #FFDFBA;
+}
+
+a {
+    color: var(--color-darker-purple);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4em;
+    font-variation-settings: 'wght' 550;
+
+}
+
+.container {
+    max-width: 95ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--base-padding);
+}
+
+.fullWidth {
+    grid-column: 1 / -1;
+}
+
+.button {
+    display: inline-block;
+    padding: .5rem 2rem;
+    color: currentColor;
+    border: 2px solid currentColor;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.15rem;
+    transition: .3s ease-out;
+}
+
+
+
+.page-header {
+    display: flex;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+
+}
+.logo .accent {
+    font-variation-settings: 'wght' 700;
+    color: var(--color-darker-purple);
+}
+
+.banner {
+    display: flex;
+    min-height: 65vh;
+    align-items: center;
+    background-color: var(--color-darker-purple);
+    color: white;
+    margin-bottom: 3rem;
+}
+.banner a {
+    color: white;
+}
+.banner a:hover {
+    color: var(--color-wheat);
+}
+.banner__content {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-auto-rows: auto;
+    grid-template-columns: .5fr 1fr;
+    align-items: start;
+    align-content: start;
+
+}
+.banner__title {
+    font-size: 2.55rem;
+    font-variation-settings: 'wght' 700;
+    line-height: 1.2em;
+
+}
+.banner__subtitle {
+    font-variation-settings: 'wght' 300;
+}
+.headshot {
+    grid-row: 1 / span 3;
+    grid-column: 1;
+    max-width: 100%;
+
+}
+
+.about {
+    margin-bottom: 3rem;
+}
+.about__header {
+    font-weight: normal;
+
+}
+
+.episodes {
+
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin-bottom: 2rem;
+}
+.episodes h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+.episodes h4 {
+    font-size: 1.5rem;
+    line-height: 1.2em;
+}
+.episodes time {
+    display: block;
+    margin-bottom: 1em;
+}
+.episodes p {
+    margin-bottom: 1em;
+}
+.episodes a {
+    color: var(--color-darker-purple);
+}
+.episodes a:hover {
+    color: var(--color-darkest-purple);
+}
+
+.site-footer {
+    background-color: var(--color-darkest-purple);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
