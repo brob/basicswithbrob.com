@@ -21,7 +21,7 @@
         <h2>Upcoming Episodes</h2>
         {% for episode in collections.upcoming %}
             <h4><a href="{{ episode.url }}">{{ episode.data.title }}</a></h4>
-            <time>{{ episode.data.airDate }}</time>
+            <time>{{ episode.data.airDate | date('MMMM D, YYYY') }}</time>
             <p>{{ episode.data.description }}</p>
             <a class="button" href="/episode-url">Get ready to watch</a>
             

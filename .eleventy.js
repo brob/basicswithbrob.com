@@ -1,7 +1,12 @@
 const { DateTime } = require("luxon");
+const dateFilter = require('nunjucks-date-filter');
 
 module.exports = function(config) {
    
+    config.addFilter("date", dateFilter);
+
+
+
     // config.addPassthroughCopy("./admin");
     config.addPassthroughCopy("./assets");
     config.addPassthroughCopy("./assets/**/*");
