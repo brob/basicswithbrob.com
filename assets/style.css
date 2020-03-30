@@ -129,6 +129,10 @@ h1 {
 .about {
     margin-bottom: 3rem;
 }
+.about__title {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
 .about__header {
     font-weight: normal;
 
