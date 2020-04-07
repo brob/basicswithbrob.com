@@ -1,4 +1,4 @@
 {
     "tags": "episode",
-    "layout": "base.njk" 
+    "layout": "episode.njk" 
 }

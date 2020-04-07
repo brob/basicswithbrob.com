@@ -1,0 +1,12 @@
+{% extends 'base.njk' %}
+
+{% block bannerClass%}banner--small{% endblock %}
+{% block banner %}
+
+    <div class="page-banner__content container">
+        <h1 class="banner__title">{{ title }}</h1>
+        <time>{{ airDate | date('MMM DD, YYYY') }}</time>
+    </div>
+
+{% endblock %}
+

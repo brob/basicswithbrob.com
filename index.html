@@ -1,14 +1,16 @@
-{% include "header.njk" %}
-
-    <section class="banner">
+{% extends 'base.njk' %}
+    {% block banner %}
         <div class="banner__content container">
             <h1 class="banner__title">Learn the basics of Web design and development with @brob</h1>
             <h2 class="banner__subtitle">Follow along each week as we build out a continuing set of projects</h2>
             <a class="banner__cta button" href="https://twitch.tv/bryanlrobinson">Follow on Twitch to get live notifications</a>
             <img class="headshot" src="/assets/images/headshot.jpg" alt="@brob's smiling face">
         </div>
-    </section>
+    {% endblock banner %}
 
+
+
+    {% block content %}
     <section class="about container">
         <h2 class="about__title">What is this?</h2>
         <h3 class="about__header">If you've just started out learning how to create amazing things on the web, but aren't sure how to put everything together, let's work together. In this series of live tutorials, Bryan (or @brob, as he's known on the Twitters) will walk you through the creation of many different projects. Most will start with a blank slate and we'll take it one step at a time.</h3>
@@ -21,10 +23,20 @@
         <div class="upcoming-episodes">
         <h2>Upcoming Episodes</h2>
         {% for episode in collections.upcoming %}
-            <h4><a href="{{ episode.url }}">{{ episode.data.title }}</a></h4>
-            <time>{{ episode.data.airDate | date('MMMM D, YYYY') }}</time>
-            <p>{{ episode.data.description }}</p>
-            <a class="button" href="/episode-url">Get ready to watch</a>
+            <article class="episode">
+                <time datetime="{{ episode.data.airDate | date('YYYY-MM-DD') }}" class="date">
+                    <div class="month">{{ episode.data.airDate | date('MMM') }}</div>
+                    <div class="day">{{ episode.data.airDate | date('D') }}</div>
+                </time>
+                <div class="episode__details">
+                    <h4><a href="{{ episode.url }}">{{ episode.data.title }}</a></h4>
+                    <time>{{ episode.data.airDate | date('MMMM D, YYYY') }}</time>
+                    <p>{{ episode.data.description }}</p>
+                    <a class="button" href="/episode-url">Get ready to watch</a>
+                </div>
+            </article>
+
+            
             
         {% endfor %}
             
@@ -42,7 +54,4 @@
         </div>
         {% endif %}
     </section>
-
-{% include "footer.njk" %}
-</body>
-</html>
+    {% endblock %}

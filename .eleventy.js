@@ -4,6 +4,7 @@ const blogTools = require("eleventy-plugin-blog-tools");
 
 module.exports = function(config) {
    
+    
     config.addFilter("date", dateFilter);
     config.addPlugin(blogTools);
 
@@ -34,6 +35,11 @@ module.exports = function(config) {
         })
         return upcoming
     });
+
+
+    return {
+        htmlTemplateEngine: "njk"
+    }
  
 
 }
