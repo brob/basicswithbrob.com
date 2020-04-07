@@ -1,0 +1,25 @@
+
+    <div class="breakout">
+    
+        <h4 class="breakout__headline fullWidth">Lesson Materials</h4>
+        <p class="breakout__description fullWidth">{{ description }}</p>
+        
+        {% if videoId %}
+        <div class="breakout__details">
+            {% youtube videoId %}
+        </div>
+        {% endif %}
+
+        <div class="breakout__links stack {% if not videoId %}fullWidth{% endif %}">
+            {% if codeLink %}
+            <a href="{{ codeLink }}" class="lesson-code button button--wide">View the Code</a>
+            {% endif %}
+            <h5 class="link-headline">Important Links</h5>
+            <ul class="">
+                {% for link in importantLinks %}
+                    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>

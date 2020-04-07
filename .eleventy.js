@@ -1,9 +1,11 @@
 const { DateTime } = require("luxon");
 const dateFilter = require('nunjucks-date-filter');
+const blogTools = require("eleventy-plugin-blog-tools");
 
 module.exports = function(config) {
    
     config.addFilter("date", dateFilter);
+    config.addPlugin(blogTools);
 
 
 
