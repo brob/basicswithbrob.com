@@ -3,7 +3,7 @@ title: "Get started building your first website with just a browser and CodePen 
 description: "In this episode, we'll dive into the very basics of creating your very first website. We'll explore the browser, we'll use CodePen Projects for simplicity and writing your first code."
 videoId: 'z-o1W9ijUhI'
 codeLink: 'https://codepen.io/brob/project/editor/AdWPJE'
-airDate: "2020-04-09"
+airDate: "2020-04-16"
 module: "fan-site"
 importantLinks: 
     - url: 'https://developer.mozilla.org/en-US/docs/Web/HTML'

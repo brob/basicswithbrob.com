@@ -120,7 +120,7 @@ h1 {
 }
 .banner__content {
     display: grid;
-    grid-column-gap: 1.5rem;
+    grid-gap: .75rem 1.5rem;
     grid-auto-rows: auto;
     grid-template-columns: .5fr 1fr;
     align-items: start;
@@ -136,6 +136,7 @@ h1 {
 }
 .banner__subtitle {
     font-variation-settings: 'wght' 300;
+    line-height: 1.2em;
 }
 .headshot {
     grid-row: 1 / span 3;
@@ -198,13 +199,7 @@ h1 {
     line-height: 1.4em;
     margin: 0;
 }
-.episodes time {
-    display: block;
-    margin-bottom: 1em;
-}
-.episodes p {
-    margin-bottom: 1em;
-}
+
 .episodes a {
     color: var(--color-darker-purple);
 }
