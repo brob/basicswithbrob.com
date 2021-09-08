@@ -1,0 +1,14 @@
+---
+title: "Past Episodes"
+layout: "base.njk"
+---
+
+<div class="past-episodes">
+    <h3>Previous episodes and code</h3>
+    {% for episode in collections.previous %}
+        <h4><a href="{{ episode.url }}">{{ episode.data.title }}</a></h4>
+        <a href="{{ episode.data.codeLink }}">View the Code</a>
+        <a href="{{ episode.url }}">See full details</a>
+    {% endfor %}
+        
+</div>
