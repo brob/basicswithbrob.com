@@ -4,6 +4,7 @@ description: "In this episode, we'll dive into the React JS documentation and pu
 # videoId: 'z-o1W9ijUhI'
 # codeLink: 'https://codepen.io/brob/project/editor/AdWPJE'
 airDate: "2021-09-09"
+airTime: "1 p.m. EDT / 10 a.m. PDT"
 module: "react"
 importantLinks: 
     - url: 'https://reactjs.org/tutorial/tutorial.html'

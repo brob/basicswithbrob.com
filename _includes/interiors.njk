@@ -5,7 +5,7 @@
 
     <div class="page-banner__content container">
         <h1 class="banner__title">{{ title }}</h1>
-        <time>{{ airDate | date('MMM DD, YYYY') }}</time>
+        <time>{{ airDate | date('MMM DD, YYYY') }}{% if airTime %} at {{ airTime }}{% endif %}</time>
     </div>
 
 {% endblock %}
